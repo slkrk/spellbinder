@@ -1,4 +1,4 @@
-package com.slkrk.spellbinder;
+package com.slkrk.spellbinder.client;
 
 import com.sun.javafx.util.Logging;
 import javafx.application.Application;

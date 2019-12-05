@@ -19,7 +19,7 @@ public class Controller {
     private String content = "";
 
     @FXML
-    private Pane mainPane;
+    private Pane root;
 
 //    @FXML
 //    private TextArea mainPane_textArea;
@@ -28,7 +28,7 @@ public class Controller {
     protected void onKeyReleased(KeyEvent keyEvent) {
 
         diff_match_patch dmp = new diff_match_patch();
-        String newContent = ((TextArea) mainPane.getChildren().get(0)).getText();
+        String newContent = ((TextArea) root.getChildren().get(0)).getText();
         LinkedList<diff_match_patch.Diff> diffList =  dmp.diff_main(content, newContent, true);
         String delta = dmp.diff_toDelta(diffList);
         LinkedList<diff_match_patch.Diff> diffList2 = dmp.diff_fromDelta(content, delta);

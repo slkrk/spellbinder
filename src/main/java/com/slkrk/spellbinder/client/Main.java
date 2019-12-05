@@ -1,6 +1,6 @@
 package com.slkrk.spellbinder.client;
 
-import com.sun.javafx.util.Logging;
+//import com.sun.javafx.util.Logging;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -12,7 +12,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.awt.*;
-import java.util.logging.Logger;
+//import java.util.logging.Logger;
 
 public class Main extends Application {
 
@@ -24,6 +24,7 @@ public class Main extends Application {
 
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("spellbinder.fxml"));
+//        Parent root = FXMLLoader.load(getClass().getResource("spellbinder.fxml"));
 
 
 
